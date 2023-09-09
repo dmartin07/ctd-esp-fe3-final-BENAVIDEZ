@@ -1,36 +1,13 @@
-import axios from "axios";
-
 export const reducer = (state, action) => {
-  const baseURL = `https://jsonplaceholder.typicode.com/users`;
-
-  const getData = () => {
-    axios
-      .get(baseURL)
-      .then((res) => {
-        console.log(res.data);
-        state.data = res.data;
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  };
-
   switch (action.type) {
-    case "GetDataFromAPI":
-      return {
-        data: getData(),
-      };
+    case "GetDataFromAPI_LOADING":
+      return { ...state, loading: true, error: null };
+    case "GetDataFromAPI_SUCCESS":
+      return { ...state, data: action.payload, loading: false, error: null };
+    case "GetDataFromAPI_ERROR":
+      return { ...state, loading: false, error: action.payload };
     case "ChangeTheme":
-      if (state.theme === "light") {
-        return {
-          theme: "dark",
-        };
-      } else {
-        return {
-          theme: "light",
-        };
-      }
-
+      return { ...state, theme: state.theme === "light" ? "dark" : "light" };
     default:
       return state;
   }
