@@ -120,3 +120,8 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+
+.ContactErrorMessage {
+  color: red;
+  font-weight: 600;
+}

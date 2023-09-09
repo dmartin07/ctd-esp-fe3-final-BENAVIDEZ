@@ -3,10 +3,8 @@
 
 function Card(props) {
   return (
-    <div className="Card">
-      <h2>Detalle Aeropuerto Ingresado</h2>
-      <p>Código: {props.codigo}</p>
-      <p>Nombre: {props.nombre}</p>
+    <div>
+      Gracias {props.name}, te contactaremos cuando antes vía mail.
     </div>
   );
 }

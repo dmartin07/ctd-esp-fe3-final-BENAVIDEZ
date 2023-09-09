@@ -2,8 +2,8 @@
 
 function Error() {
   return (
-    <div className="Error">
-      <p>Por favor chequea que la información sea correcta</p>
+    <div className="ContactErrorMessage">
+      <p>Por favor verifique su información nuevamente.</p>
     </div>
   );
 }
