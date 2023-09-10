@@ -26,7 +26,7 @@ const Card = ({ name, username, id }) => {
     <div className={`card ${state.theme}`}>
       <img className="doctorIMG" src="/images/doctor.jpg" alt="doctor" />
       <h3>
-        <Link to={`/dentist/${id}`}>{name}</Link>
+        <Link className="link" to={`/dentist/${id}`}>{name}</Link>
       </h3>
       <p>
         Id: {id} - Username: {username}

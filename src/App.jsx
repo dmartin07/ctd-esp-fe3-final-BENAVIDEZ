@@ -1,21 +1,22 @@
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-import { Outlet } from "react-router-dom";
-import {  ContextProvider } from "./Components/utils/global.context";
+  import Footer from "./Components/Footer";
+  import Navbar from "./Components/Navbar";
+  import { Outlet } from "react-router-dom";
+  import {  ContextProvider } from "./Components/utils/global.context";
 
 
-function App() {
+
+  function App() {
 
 
-  return (
-    <ContextProvider>
-      <div>
-        <Navbar />
-        <Outlet />
-        <Footer />
-      </div>
-    </ContextProvider>
-  );
-}
+    return (
+      <ContextProvider>
+        <div>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </div>
+      </ContextProvider>
+      );
+  }
 
-export default App;
+  export default App;

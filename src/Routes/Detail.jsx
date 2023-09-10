@@ -16,10 +16,12 @@ const Detail = () => {
   return (
     <div className={state.theme}>
       <h1>Detail dentist {dentista.id}</h1>
+      <div className="detail">
       <p>Name: {dentista.name}</p>
       <p>Email: {dentista.email}</p>
       <p>Phone: {dentista.phone}</p>
       <p>Website: {dentista.website}</p>
+      </div>
     </div>
   );
 };

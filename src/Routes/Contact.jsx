@@ -10,7 +10,8 @@ const Contact = () => {
   const { state } = useContext(ContextGlobal);
 
   return (
-    <div className={state.theme}>
+    <div className={`${state.theme} contact`}>
+
       <h2>Want to know more?</h2>
       <p>Send us your questions and we will contact you</p>
       <Form/>
