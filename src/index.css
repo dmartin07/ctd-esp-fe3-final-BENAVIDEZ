@@ -21,11 +21,23 @@ code {
 
 h1{
   text-align: center;
+  margin: 0px;
+  padding-bottom: 16px
+}
+
+h2{
+  margin: 0px
+}
+
+p{
+padding-bottom: 16px;
+padding-top: 16px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
 nav{
   display: flex;
-  width: 80vw;
   justify-content: flex-start;
   padding: 1rem;
 }
@@ -47,9 +59,8 @@ footer {
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
-  margin-top: 2rem;
+
 }
 
 footer > img{
