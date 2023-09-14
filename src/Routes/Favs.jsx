@@ -4,7 +4,6 @@ import { useContext } from "react";
 import { ContextGlobal } from "../Components/utils/global.context";
 
 const Favs = () => {
-
   const { state } = useContext(ContextGlobal);
 
   const favs = JSON.parse(localStorage.getItem("favs")) || [];

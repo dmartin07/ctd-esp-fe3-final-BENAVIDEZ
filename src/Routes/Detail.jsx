@@ -4,7 +4,6 @@ import { ContextGlobal } from "../Components/utils/global.context";
 import { useContext } from "react";
 
 const Detail = () => {
-
   const { id } = useParams();
   const { state } = useContext(ContextGlobal);
   const dentista = state.data.find((d) => d.id === parseInt(id));
@@ -17,10 +16,10 @@ const Detail = () => {
     <div className={state.theme}>
       <h1>Detail dentist {dentista.id}</h1>
       <div className="detail">
-      <p>Name: {dentista.name}</p>
-      <p>Email: {dentista.email}</p>
-      <p>Phone: {dentista.phone}</p>
-      <p>Website: {dentista.website}</p>
+        <h4>Name: {dentista.name}</h4>
+        <h4>Email: {dentista.email}</h4>
+        <h4>Phone: {dentista.phone}</h4>
+        <h4>Website: {dentista.website}</h4>
       </div>
     </div>
   );

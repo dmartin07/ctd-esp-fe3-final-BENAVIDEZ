@@ -4,7 +4,6 @@ import ContactErrorMessage from "../Components/ContactErrorMessage";
 import ContactSuccessMessage from "../Components/ContactSuccessMessage";
 
 const Form = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mostrarCard, setMostrarCard] = useState(false);
@@ -36,11 +35,9 @@ const Form = () => {
   };
 
   const validarEmail = (email) => {
-    
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    return regex.test(email)
-
+    return regex.test(email);
   };
 
   return (
