@@ -43,6 +43,10 @@ nav{
   padding-right: 4rem;
 }
 
+nav button{
+  margin-left: 50px;
+}
+
 a{
   color: #000;
   text-decoration: none;
@@ -69,7 +73,7 @@ footer {
 }
 
 .logoDH {
-  padding-left: ;
+  padding-left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -124,6 +128,12 @@ form{
   border: 0.5px solid rgb(206, 217, 142);
 }
 
+.card button{
+  width: 100px ;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
 .card-grid{
   display: flex;
   justify-content: center;
@@ -171,6 +181,7 @@ tr:nth-child(even) {
   color: white;
 }
 
+
 .ContactErrorMessage {
   color: red;
   font-weight: 600;
@@ -199,3 +210,14 @@ border: solid 2px;
   align-items: center;
 
 }
+
+
+.favicon {
+  width: 30px;
+}
+
+.themeicon {
+  width: 30px;
+  padding-top: 3px;
+}
+

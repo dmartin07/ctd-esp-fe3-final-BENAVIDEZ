@@ -6,6 +6,7 @@ export const initialState = { theme: 'light', data: [], loading: false, error: n
 export const ContextGlobal = createContext(undefined);
 
 export const ContextProvider = ({ children }) => {
+
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {

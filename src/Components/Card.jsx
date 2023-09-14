@@ -32,7 +32,7 @@ const Card = ({ name, username, id }) => {
         Id: {id} - Username: {username}
       </p>
       <button onClick={addFav} className="favButton">
-        Add fav
+        <img src="/images/favicon.ico" alt="favicon" className="favicon" />
       </button>
     </div>
   );

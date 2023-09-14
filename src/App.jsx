@@ -4,9 +4,7 @@
   import {  ContextProvider } from "./Components/utils/global.context";
 
 
-
   function App() {
-
 
     return (
       <ContextProvider>
