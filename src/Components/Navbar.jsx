@@ -26,7 +26,7 @@ const Navbar = () => {
           <img
             src="/images/lighticon.ico"
             alt="lighticon"
-            className="themeicon  "
+            className="themeicon"
           />
         )}
       </button>
